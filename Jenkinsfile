@@ -42,7 +42,7 @@ pipeline {
 
                 sh " ${tool name: 'Sbt_Home', type:'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt clean assembly "
 
-                sh " pwd "
+                sh " pwd && cd /var/lib/jenkins/workspace/my-appp_master/target/scala-2.10/ && ls -lrt " 
 
                 sh " echo 'Successfully Build the stage.' "
             }
