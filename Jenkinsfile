@@ -40,7 +40,7 @@ pipeline {
 
                 sh " echo '${STAGE_NAME}' "
 
-                sh " ${tool name: 'Sbt_Home', type:'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt dist "
+                sh " ${tool name: 'Sbt_Home', type:'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt clean assembly "
 
                 sh " pwd "
 
