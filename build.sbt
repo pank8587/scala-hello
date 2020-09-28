@@ -11,7 +11,6 @@
    // resolvers += Resolver.url("typesafe", url("https://repo.typesafe.com/typesafe/ivy-releases/"))(Resolver.ivyStylePatterns)
   //)
 lazy val root = (project in file(".")).
-  settings(commonSettings: _*).
   settings(
     name := "hello-world",
   test in Test := {
